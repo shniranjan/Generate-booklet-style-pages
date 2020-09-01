@@ -1,7 +1,8 @@
 #!/bin/bash
 
 
-# Output pages order for printing double sided 2 pages per page booklet 
+# Output pages order for printing double sided 2 pages per page booklet
+# When printing selet prin pages and copy paste the generated page sequences
 # Syntax is bash printing.run <total pages>
 
 abc=$1
