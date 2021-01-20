@@ -1,6 +1,6 @@
 #!/bin/bash
 
-
+# Version: 0.0.01
 # Output pages order for printing double sided 2 pages per page booklet
 # When printing selet prin pages and copy paste the generated page sequences
 # Syntax is bash printing.run <total pages>
@@ -8,9 +8,9 @@
 abc=$1
 mod=$((abc%4))
 if [[ $mod -eq 0 ]];
-then 
+then
 nval=$abc
-else 
+else
 nval=$((abc + 4 - mod))
 fi
 declare -a pages
@@ -42,8 +42,4 @@ else
 echo -n $i", "
 fi
 done
-echo 
-
-
-
-
+echo
